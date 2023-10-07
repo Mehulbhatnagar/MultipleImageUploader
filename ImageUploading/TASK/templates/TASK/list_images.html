@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uploaded Images</title>
+</head>
+<body>
+    <h1>Uploaded Images</h1>
+    <ul>
+        {% for image in images %}
+            <li>{{ image.caption }} - <a href="{{ image.image.url }}" target="_blank">View Image</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
